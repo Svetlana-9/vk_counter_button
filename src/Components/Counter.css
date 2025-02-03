@@ -1,0 +1,144 @@
+.counter {
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.primary {
+  background-color: #2fb675;
+  color: #fff;
+}
+.secondary {
+  background-color: #b9b5b3;
+  color: #2e2f33;
+}
+.size_8 {
+  width: 8px;
+  height: 8px;
+  min-height: 8px;
+  min-width: 8px;
+  stroke-width: 1;
+}
+.size_12 {
+  width: 12px;
+  height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+.size_16 {
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  padding: 0 4px;
+  font-size: 11px;
+}
+.size_20 {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  stroke-width: 2;
+  padding: 0 4px;
+  font-size: 13px;
+}
+.size_24 {
+  width: 24px;
+  height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  padding: 0 6px;
+  font-size: 15px;
+}
+.pulse_counter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pulse_size_8 {
+  width: 8px;
+  height: 8px;
+}
+.pulse_size_12 {
+  width: 12px;
+  height: 12px;
+}
+.pulse_counter .dot,
+.pulse_counter .pulse {
+  position: absolute;
+  border-radius: 999px;
+}
+.pulse_primary {
+  background-color: #2fb675;
+}
+.pulse_secondary {
+  background-color: #b9b5b3;
+}
+.pulse_counter .pulse {
+  animation-name: red-dot-scale-fade;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.pulse_counter .pulse.two {
+  animation-delay: 0.25s;
+}
+@-moz-keyframes red-dot-scale-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@-webkit-keyframes red-dot-scale-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@-o-keyframes red-dot-scale-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@keyframes red-dot-scale-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
